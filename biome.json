@@ -1,0 +1,35 @@
+{
+	"$schema": "https://biomejs.dev/schemas/2.0.6/schema.json",
+	"formatter": {
+		"indentWidth": 2
+	},
+	"files": {
+		"includes": ["**", "!node_modules/*", "!**/*.svelte", "!lib/*"]
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"performance": {
+				"noDelete": "off"
+			},
+			"complexity": {
+				"noForEach": "off"
+			},
+			"suspicious": {
+				"noDoubleEquals": "off",
+				"noAssignInExpressions": "off",
+				"noCatchAssign": "off"
+			},
+			"style": {
+				"useTemplate": "off",
+				"useSingleVarDeclarator": "off",
+				"noParameterAssign": "off"
+			}
+		}
+	},
+	"javascript": {
+		"formatter": {
+			"semicolons": "asNeeded"
+		}
+	}
+}

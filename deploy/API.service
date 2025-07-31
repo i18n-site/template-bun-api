@@ -1,0 +1,11 @@
+[Unit]
+Description=API
+After=network.target
+
+[Service]
+ExecStart=/opt/API/run.sh
+Restart=always
+WorkingDirectory=/opt/API
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,28 @@
+{
+	"type": "module",
+	"version": "0.1.0",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/i18n-site/template-nodejs-api.git"
+	},
+	"homepage": "https://github.com/i18n-site/template-nodejs-api",
+	"author": "i18n.site@gmail.com",
+	"license": "Apache-2.0",
+	"exports": {
+		".": "./lib/lib.js",
+		"./*": "./lib/*"
+	},
+	"files": [
+		"lib/*"
+	],
+	"dependencies": {
+		"@8v/honobind": "^0.1.3",
+		"hono": "^4.8.10"
+	},
+	"devDependencies": {
+		"@3-/coffee_plus": "^0.1.29",
+		"@3-/loader": "^0.0.2",
+		"coffeescript": "^2.7.0",
+		"concurrently": "^9.2.0"
+	}
+}
